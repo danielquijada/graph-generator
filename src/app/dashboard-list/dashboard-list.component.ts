@@ -4,26 +4,86 @@ import { MatIcon, MatPaginator, MatTableDataSource } from '@angular/material';
 
 // MOCK
 const MOCK_DASHBOARDS: Dashboard[] = [
-  { id: 1, name: 'Hydrogen' },
-  { id: 2, name: 'Helium' },
-  { id: 3, name: 'Lithium' },
-  { id: 4, name: 'Beryllium' },
-  { id: 5, name: 'Boron' },
-  { id: 6, name: 'Carbon' },
-  { id: 7, name: 'Nitrogen' },
-  { id: 8, name: 'Oxygen' },
-  { id: 9, name: 'Fluorine' },
-  { id: 10, name: 'Neon' },
-  { id: 11, name: 'Sodium' },
-  { id: 12, name: 'Magnesium' },
-  { id: 13, name: 'Aluminum' },
-  { id: 14, name: 'Silicon' },
-  { id: 15, name: 'Phosphorus' },
-  { id: 16, name: 'Sulfur' },
-  { id: 17, name: 'Chlorine' },
-  { id: 18, name: 'Argon' },
-  { id: 19, name: 'Potassium' },
-  { id: 20, name: 'Calcium' },
+  {
+    id: 1, name: 'Hydrogen', description: 'Dashboard about the 1º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
+  {
+    id: 2, name: 'Helium', description: 'Dashboard about the 2º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
+  {
+    id: 3, name: 'Lithium', description: 'Dashboard about the 3º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
+  {
+    id: 4, name: 'Beryllium', description: 'Dashboard about the 4º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
+  {
+    id: 5, name: 'Boron', description: 'Dashboard about the 5º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
+  {
+    id: 6, name: 'Carbon', description: 'Dashboard about the 6º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
+  {
+    id: 7, name: 'Nitrogen', description: 'Dashboard about the 7º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
+  {
+    id: 8, name: 'Oxygen', description: 'Dashboard about the 8º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
+  {
+    id: 9, name: 'Fluorine', description: 'Dashboard about the 9º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
+  {
+    id: 10, name: 'Neon', description: 'Dashboard about the 10º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
+  {
+    id: 11, name: 'Sodium', description: 'Dashboard about the 11º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
+  {
+    id: 12, name: 'Magnesium', description: 'Dashboard about the 12º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
+  {
+    id: 13, name: 'Aluminum', description: 'Dashboard about the 13º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
+  {
+    id: 14, name: 'Silicon', description: 'Dashboard about the 14º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
+  {
+    id: 15, name: 'Phosphorus', description: 'Dashboard about the 15º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
+  {
+    id: 16, name: 'Sulfur', description: 'Dashboard about the 16º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
+  {
+    id: 17, name: 'Chlorine', description: 'Dashboard about the 17º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
+  {
+    id: 18, name: 'Argon', description: 'Dashboard about the 18º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
+  {
+    id: 19, name: 'Potassium', description: 'Dashboard about the 19º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
+  {
+    id: 20, name: 'Calcium', description: 'Dashboard about the 20º element', json: '',
+    creationDate: '2018-08-08T20:58:47.756Z', modificationDate: '2018-08-08T20:58:47.756Z'
+  },
 ];
 
 // tslint:disable-next-line:max-line-length
